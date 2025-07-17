@@ -1,0 +1,28 @@
+.section__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.pricing {
+  display: grid;
+  gap: 8px;
+}
+
+.pricing__item {
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.pricing__item h3 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.pricing__item h4 {
+  font-size: .875rem;
+  font-weight: 400;
+}
