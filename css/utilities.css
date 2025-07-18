@@ -28,6 +28,11 @@ body {
 
 /* lg */
 @media (max-width: 1024px) {
+  body {
+    height: initial;
+    display: block;
+  }
+
   .container {
     max-width: 768px;
   }

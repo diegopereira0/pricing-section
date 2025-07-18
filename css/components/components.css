@@ -2,15 +2,24 @@
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 2rem;
   margin-bottom: 1.25rem;
 }
 
 .pricing {
   display: grid;
-  gap: 8px;
+  gap: 1rem;
+  grid-template-areas:
+    "item-css item-css item-css item-js"
+    "item-reactjs item-reactjs item-nextjs item-nextjs";
+  padding-bottom: 2.5rem;
 }
 
+/* Pricing item */
 .pricing__item {
+  display: grid;
+  gap: 3rem;
+  align-content: space-between;
   background-color: #000;
   padding: 2rem;
   border-radius: 8px;
@@ -19,10 +28,55 @@
 
 .pricing__item h3 {
   font-size: 1.25rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .pricing__item h4 {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
+}
+
+.pricing__item p {
+  color: #767672;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.item__css {
+  grid-area: item-css;
+}
+
+.item__js {
+  grid-area: item-js;
+}
+
+.item__reactjs {
+  grid-area: item-reactjs;
+}
+
+.item__nextjs {
+  grid-area: item-nextjs;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 0.875rem 1.125rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .pricing {
+    grid-template-areas:
+      "item-css"
+      "item-js"
+      "item-reactjs"
+      "item-nextjs";
+  }
+
+  .pricing__item {
+    gap: 1.5rem;
+  }
 }
